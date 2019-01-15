@@ -1,0 +1,55 @@
+@charset "UTF-8";
+ 
+body {
+    background-image: url("background.gif");
+    max-width: 700px;
+    margin: auto;
+}
+ 
+h3 {
+    font-size: 20px;
+    color: blue;
+    text-align: center;
+    padding-bottom: 10px;
+}
+ 
+fieldset{
+    border: solid blue;
+    color: darkgreen;
+    font-size: 12px;
+    padding: 12px;
+    
+}
+ 
+label {
+    font-weight: bold;
+}
+ 
+legend{
+    font-size: 14px;
+    font-weight: bold;
+    font-style: italic;
+    color: blue;
+    padding-left: 10px;
+    padding-right: 10px;
+    
+}
+ 
+option{
+    background: lavender;
+    /* font-size: 12px; */
+}
+ 
+input{
+    background: lavender;
+}
+ 
+p {
+    font-family: verdana;
+    font-size: 20px;
+}
+
+ 
+
+
+ 

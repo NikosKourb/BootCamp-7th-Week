@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" type="text/css" href="ErwtimatologStyle.css">
+<head>
+<script type="text/javascript" src="myFunction.js"></script>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+    <header>
+    <h3>ΕΡΩΤΗΜΑΤΟΛΟΓΙΟ ΧΡΗΣΗΣ ΕΥΡΥΖΩΝΙΚΩΝ ΥΠΗΡΕΣΙΩΝ</h3>
+    </header>
+    <form id="myForm" action="ErInternet.php">
+        <fieldset>
+            <legend class="legendColour">Προσωπικά στοιχεία</legend>
+            Επώνυμο: <input type="text" name="surname" required> 
+            Όνομα: <input type="text" name="name" required> <br /> <br /> 
+            Email: <input type="text" name="email" required> 
+            Επαγγελμα: <select name="prof">
+                <option value="pupil">Μαθητής</option>
+                <option value="student">Φοιτητής</option>
+                <option value="working">Εργαζόμενος</option>
+                <option value="pensioner">Συνταξιούχος</option>
+                <option value="unemployed">Άνεργος</option>
+            </select> <br /> <br /> Ηλικία: <select name="age">
+                <option value="age1"><18</option>
+                <option value="age2">18-27</option>
+                <option value="age3">28-40</option>
+                <option value="age4">41-50</option>
+                <option value="age5">51-65</option>
+                <option value="age6">65+</option>
+            </select> Μορφωτικό επίπεδο: <select name="education">
+                <option value="secondary">Δευτεροβάθμια</option>
+                <option value="graduate">Πανεπιστήμιο - ΤΕΙ</option>
+                <option value="postgraduate">Μεταπτυχιακό</option>
+                <option value="doctorate">Διδακτορικό</option>
+            </select> <br /> <br /> Φυλο: <input type="radio" name="gender" value="M">Άνδρας
+            <input type="radio" name="gender" value="F">Γυναίκα
+        </fieldset>
+        <br />
+        <fieldset>
+            
+            <script>
+            function myFunction() {
+            	
+            	var q = document.getElementById("skata0").disabled = true;
+            	var x = document.getElementById("skata").disabled = true;
+            	var y = document.getElementById("skata2").disabled = true;
+            	var z = document.getElementById("skata3").disabled = true;
+            	var w = document.getElementById("skata4").disabled = true;
+            	var i = document.getElementById("skata5").disabled = true;
+            	var j = document.getElementById("skata6").disabled = true;
+            	var t = document.getElementById("skata7").disabled = true;
+            	var p = document.getElementById("skata8").disabled = true;
+            	var r= document.getElementById("skata9").disabled = true;
+            	
+            }
+            
+ function myFunction2() {
+            	
+            	var q = document.getElementById("skata0").disabled = false;
+            	var x = document.getElementById("skata").disabled = false;
+            	var y = document.getElementById("skata2").disabled = false;
+            	var z = document.getElementById("skata3").disabled = false;
+            	var w = document.getElementById("skata4").disabled = false;
+            	var i = document.getElementById("skata5").disabled = false;
+            	var j = document.getElementById("skata6").disabled = false;
+            	var t = document.getElementById("skata7").disabled = false;
+            	var p = document.getElementById("skata8").disabled = false;
+            	var r= document.getElementById("skata9").disabled = false;
+            	
+            }
+ 
+ function myClassFunction() {
+	 
+	 var a = document.getElementsByClassName("auti").disabled = true;
+ }
+ 
+            </script>
+            
+            <legend class="legendColour">Ερωτήσεις σχετικά με το Internet</legend>
+            1.Έχετε σύνδεση στο Internet στην κατοικία σας; <br /> 
+            <input type="radio" name="q1" value="Y" onclick="myFunction2()"">Ναι <br /> 
+            <input type="radio" name="q1" value="N" onclick="myClassFunction()">Όχι <br /> <br /> 
+            <div>
+            2.Τι είδους σύνδεση διαθέτετε; <br /> 
+            <input class="auti" id="skata0" type="radio" name="q2" value="dialup" >Dial-up <br /> 
+                <input class="auti" id="skata" type="radio" name="q2" value="isdn" >ISDN <br /> 
+                <input class="auti" id="skata2" type="radio" name="q2" value="sat" >Δορυφορική <br /> 
+                <input class="auti" id="skata3" type="radio" name="q2" value="dsl" >DSL <br /> <br /> 
+            3.Είστε ευχαριστημένοι από την ταχυτητα συνδεσης σας στο Internet; <br /> 
+            <input class="auti" id="skata4" type="radio" name="q3" value="N" >Όχι <br /> 
+            <input class="auti" id="skata5" type="radio" name="q3" value="E" >Αρκετά <br /> 
+            <input class="auti" id="skata6" type="radio" name="q3" value="Y" >Ναι <br /> <br /> 
+            4.Πόσες ώρες καθημερινά χρησιμοποιείτε τη συνδεσή σας στο Internet; <br /> 
+            <input class="auti" id="skata7" type="radio" name="q4" value="1" >Λιγότερο απο μία ώρα <br />
+            <input class="auti" id="skata8" type="radio" name="q4" value="2" >Άπο μία έως τρεις ώρες <br /> 
+            <input class="auti" id="skata9" type="radio" name="q4" value="3" >Περισσότερες άπο τρεις ώρες
+            </div>
+        </fieldset>
+        <br />
+        <fieldset>
+            5.Γνωριζετε τον όρο Ευρυζωνικότητα;<select name="q5">
+                <option value="Y">Ναι</option>
+                <option value="N">Όχι</option>
+            </select> <br /> <br /> 6.Είστε ενημερωμένοι για το κόστος απόκτησης
+            ευρυζωνικής προσβασης στο Διαδίκτυο;<select name="q6">
+                <option value="Y">Ναι</option>
+                <option value="N">Όχι</option>
+            </select> <br /> <br /> 7.Τι κατά τη γνώμη σας είναι πιο σημαντικό για μια
+            ευρυζωνική σύνδεση; <br /> <input type="radio" name="q7" value="cost">Το
+            προσιτό κόστος <br /> <input type="radio" name="q7" value="services">Η
+            ποιότητα υπηρεσιών του παρόχου <br /> <input type="radio" name="q7"
+                value="speed">Η ταχύτητα της σύνδεσης <br /> <input
+                type="radio" name="q7" value="other">Άλλο
+        </fieldset>
+        <br /> <br />
+        <input type="submit" onClick="alert('Are you sure?');" value="Αποδοχή">
+        <input type="reset" value="Καθαρισμός">
+        <a href="Javascript:OpenWindow();">more info</a>
+         <input type ="button" onClick="alert('Are you sure?');"/>
+    </form>
+<script>myFunction2()</script>
+    <!-- <script>
+function myFunction() {
+    document.getElementById("myForm").reset();
+}
+
+</script> -->
+
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript" src="jquery-3.3.1.min.js"></script>
+</head>
+<body>
+
+    <div id="contact_form">
+          <form name="contact" method="post" action="">
+
+            <input type="text" name="name" id="name" size="30" value="Name" class="text-input" />
+            <label class="error" for="name" id="name_error">Please enter your name.</label>
+            <br />
+
+            <input type="text" name="email" id="email" size="30" value="Email" class="text-input" />
+            <label class="error" for="email" id="email_error">I need your email.</label>
+            <br />
+
+            <textarea rows="10" cols="30" type="textarea" name="message" id="message" value="Message" class="text-input" ></textarea>
+            <label class="error" for="message" id="message_error">A message is required.</label>
+
+            <br />
+            <input type="submit" name="submit" class="button" id="submit" value="Send" />
+
+          </form>
+</div>
+
+<div id="details">
+    <p>some details here, not sure what yet</p>
+    </div>
+
+<div id="mail_list">
+    <input type="text" id="mail" value="Your email" name="mail_list" /><input type="submit" name="submit" class="button" id="submit" value="Send" />
+    </div>
+
+<script type="text/javascript" src="TypeTextRealTime.js"></script>
+
+</body>
+</html>

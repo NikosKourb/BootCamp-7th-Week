@@ -1,0 +1,11 @@
+/**
+ * 
+ */
+$(document).ready(function(){
+	$.ajax({
+		url:'paragraphs.html',
+	    success:function(data){
+		$('#ajax-div').html(data);
+		}
+	});
+});
